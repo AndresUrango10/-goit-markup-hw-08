@@ -1,3 +1,3 @@
 ### LIve Demo
 
-https://andresurango10.github.io/Goit-markup-hw-01/
+https://andresurango10.github.io/goit-markup-hw-02/
