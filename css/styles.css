@@ -5,6 +5,7 @@
 }
 
 body{
+    
     font-family: 'Roboto', sans-serif;
     color: var(--color-body);
 }
@@ -17,7 +18,14 @@ body{
 }
 
 
-.web-links .nav-item-active:focus{
+.web-links .nav-item-active:focus , 
+.web-links,.link:hover,
+.link-info:hover,
+.button-service:hover,
+.info:hover,
+/* portafolio buttons */
+.list-button .bottom-primary:focus,
+.list-button,.buttons:hover{ 
     color:var(--color-plural)
 }
 
@@ -28,9 +36,6 @@ body{
     line-height: 1.1;
     font-weight: 500;
 }
-.web-links, .link:hover{
-    color: var(--color-plural);
-}
 
 .link-info{
     color: #757575;
@@ -38,9 +43,7 @@ body{
     line-height: 1.1;
     font-weight: 500;
 }
-.link-info:hover{
-    color: var(--color-plural);
-}
+
 
 .tittle{
     font-size: 44px;
@@ -52,9 +55,6 @@ body{
     font-size: 16px;
     line-height: 1.9;
     font-weight: 700;
-}
-.button-service:hover{
-    color: var(--color-plural);
 }
 
 .subtittle-advantages > li{
@@ -91,9 +91,6 @@ body{
     color: #ffffff;
     line-height: 1.7;
 }
-.info:hover{
-    color: var(--color-plural);
-}
 
 ***/* portafolio */***
 
@@ -106,8 +103,10 @@ body{
     font-weight: 500;
     line-height: 1.6;
 }
-.list-button,.buttons:hover{
-    color: var(--color-plural);
+
+.photos{
+    width:370px;
+    height:404px;
 }
 
 .articles{
@@ -119,11 +118,6 @@ body{
     line-height: 2;
 }
 
-
-
-.list-button .bottom-primary:focus{
-    color: var(--color-plural);
-}
 .list-button .bottom-primary:active{
     color: #FFFFFF
 }
