@@ -1,0 +1,129 @@
+:root{
+    --color-plural:#2196F3;
+    --color-body: #212121;
+    --color-team:#757575;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-body);
+}
+
+***/* index */***
+.logo{
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+
+.web-links .nav-item-active:focus{
+    color:var(--color-plural)
+}
+
+
+.web-links,.link{
+    color: var(--color-body);
+    font-size: 14px;
+    line-height: 1.1;
+    font-weight: 500;
+}
+.web-links, .link:hover{
+    color: var(--color-plural);
+}
+
+.link-info{
+    color: #757575;
+    font-size: 14px;
+    line-height: 1.1;
+    font-weight: 500;
+}
+.link-info:hover{
+    color: var(--color-plural);
+}
+
+.tittle{
+    font-size: 44px;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+.button-service{
+    font-size: 16px;
+    line-height: 1.9;
+    font-weight: 700;
+}
+.button-service:hover{
+    color: var(--color-plural);
+}
+
+.subtittle-advantages > li{
+    font-size: 14px;
+    line-height: 1.7
+}
+.details{
+    font-weight: 700;
+}
+
+
+.subtitle-profession{
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.subtitle-team{
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.name{
+    font-weight: 500;
+}
+
+.occupation{
+    color: var(--color-team);
+    
+}
+
+.info{
+    color: #ffffff;
+    line-height: 1.7;
+}
+.info:hover{
+    color: var(--color-plural);
+}
+
+***/* portafolio */***
+
+.link-head {
+    color: var(--color-body);
+}
+
+.list-button,.buttons:hover{
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 1.6;
+}
+.list-button,.buttons:hover{
+    color: var(--color-plural);
+}
+
+.articles{
+    font-weight: 700;
+    line-height: 2;
+}
+.reference{
+    color: var(--color-team);
+    line-height: 2;
+}
+
+
+
+.list-button .bottom-primary:focus{
+    color: var(--color-plural);
+}
+.list-button .bottom-primary:active{
+    color: #FFFFFF
+}
