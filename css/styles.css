@@ -19,7 +19,7 @@ body{
 
 
 .web-links .nav-item-active:focus , 
-.web-links,.link:hover,
+.web-links .link:hover,
 .link-info:hover,
 .button-service:hover,
 .info:hover,
@@ -119,5 +119,6 @@ body{
 }
 
 .list-button .bottom-primary:active{
-    color: #FFFFFF
+    color: #FFFFFF;
+    
 }
