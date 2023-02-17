@@ -17,7 +17,7 @@ body{
     font-weight: 700;
 }
 
-
+.web-links .nav-item-active,
 .web-links .nav-item-active:focus , 
 .web-links .link:hover,
 .link-info:hover,
