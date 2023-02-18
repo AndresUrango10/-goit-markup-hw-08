@@ -1,3 +1,39 @@
+h1,h2,h3,h4,h5,h6,
+p {
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 :root{
     --color-plural:#2196F3;
     --color-body: #212121;
@@ -5,12 +41,13 @@
 }
 
 body{
-    
+    background: #E5E5E5;;
     font-family: 'Roboto', sans-serif;
     color: var(--color-body);
 }
 
 ***/* index */***
+
 .logo{
     font-size: 26px;
     line-height: 1.2;
@@ -61,6 +98,7 @@ body{
     font-size: 14px;
     line-height: 1.7
 }
+
 .details{
     font-weight: 700;
 }
@@ -72,12 +110,20 @@ body{
     font-weight: 700;
 }
 
+.image{
+    width:373px;
+    height:323px;
+}
+
 .subtitle-team{
     font-size: 36px;
     line-height: 1.2;
     font-weight: 700;
 }
 
+.image-team{
+    width:270px;
+}
 .name{
     font-weight: 500;
 }
@@ -92,11 +138,10 @@ body{
     line-height: 1.7;
 }
 
+
+
 ***/* portafolio */***
 
-.link-head {
-    color: var(--color-body);
-}
 
 .list-button,.buttons:hover{
     cursor: pointer;
@@ -122,3 +167,14 @@ body{
     color: #FFFFFF;
     
 }
+
+.section{
+    padding: 94px 0;
+}
+
+.container{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
