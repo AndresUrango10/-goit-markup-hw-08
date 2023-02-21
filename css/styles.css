@@ -264,7 +264,7 @@ footer address .logo {
     color: var(--color-plural);
 }
 .footer-padding{
-    padding: 60px 45px;
+    padding: 50px 35px;
 }
 .footer-background {
     height: 270px;
@@ -345,5 +345,6 @@ footer address .logo {
 .portfolio .cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
+    padding: 0 15px;
 }
