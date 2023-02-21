@@ -180,7 +180,6 @@ p {
     color: var(--color-advantages);
 }
 .advantages {
-
     justify-content: center;
     display: flex;
     justify-content: space-between;
