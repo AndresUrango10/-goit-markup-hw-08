@@ -121,31 +121,25 @@ header {
 }
 
 /************ seccion tittle ***********/
-.tittle {
-    display: flex;
+
+.hero-tittle{
+    background-color: var(--color-background);
+    padding: 200px;
     text-align: center;
-    color: #FFFFFF;
-    margin: 150px 452px 280px 400px;
+    
+}
+.tittle{
+    font-weight: 900;
     font-size: 44px;
     line-height: 1.5;
+    color: white;
+    width: 696px;
+    margin: 20px auto;
     font-weight: 900;
 }
-.background {
-    height: 600px;
-    background: var(--color-background);
-}
 
-.footer-background {
-    padding-top: 45px;
-    padding-left:215px;
-    height: 252px;
-    background: var(--color-background);
-}
+/* boton service */
 
-.button{
-    display: inline-block;
-    margin: 0 701px 0 702px;
-}
 .button-service:hover {
     cursor: pointer;
     color: var(--color-plural);
@@ -158,6 +152,14 @@ header {
     line-height: 1.9;
     font-weight: 700;
     border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+}.footer-background {
+    padding-top: 45px;
+    padding-left:215px;
+    height: 252px;
+    background: var(--color-background);
 }
 
 
