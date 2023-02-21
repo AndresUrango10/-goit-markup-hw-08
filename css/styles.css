@@ -112,10 +112,7 @@ header {
     justify-content: center;
     margin-left: 150px;
 }
-.contact-menu {
-    display: flex;
-    justify-content: space-between;
-}
+
 .contact-menu>li {
     margin: 32px;
 }
@@ -155,40 +152,30 @@ header {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
-}.footer-background {
-    padding-top: 45px;
-    padding-left:215px;
-    height: 252px;
-    background: var(--color-background);
 }
 
-
 /********* seccion advantages *********/
-
+.subtittle-advantages {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
 .subtittle-advantages>li {
     font-size: 14px;
     line-height: 1.7;
     padding: 30px;
 }
 
+p {
+    color: var(--color-advantages);
+    line-height: 1.8;
+    font-size: 14px;
+}
+
 .details {
     margin-bottom: 10px;
     color: var(--color-body);
     font-weight: 700;
-}
-p {
-    color: var(--color-advantages);
-}
-.advantages {
-    justify-content: center;
-    display: flex;
-    justify-content: space-between;
-}
-
-.subtittle-advantages {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
 }
 
 
@@ -203,60 +190,52 @@ p {
     font-weight: 700;
     letter-spacing: 0.03em;
 }
-.image {
-    width: 373px;
-    height: 323px;
-}
-
-.list-tecnic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .list-tecnic{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.list-tecnic li {
-    margin: 0 30px;
+.image {
+    width: 373px;
+    height: 323px;
+}
+
+
+.image {
+    width: 373px;
+    height: 323px;
 }
 
 /********* seccion equipo **********/
-.subtitle-team {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+.subtitle-team{
     font-size: 36px;
-    line-height: 1.2;
     font-weight: 700;
+    padding: 30px 0;
+    text-align: center;
     letter-spacing: 0.03em;
 }
-
 .image-team {
     width: 270px;
     height: 260;
+    
 }
-
 .name {
-    font-weight: 500;
+    font-weight: 700;
 }
-
 .occupation {
     color: var(--color-team);
 }
 
 .list-occupation {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    
 }
 
 .list-occupation li {
-    background-color: var(--primary-white-color);
     text-align: center;
-    list-style: none;
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     border: 1px solid #eeeeee;
@@ -283,6 +262,13 @@ footer address .logo {
     font-weight: 700;
     line-height: 2.2;
     color: var(--color-plural);
+}
+.footer-padding{
+    padding: 60px 45px;
+}
+.footer-background {
+    height: 270px;
+    background: var(--color-background);
 }
 
 
