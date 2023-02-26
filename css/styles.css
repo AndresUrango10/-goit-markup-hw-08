@@ -34,6 +34,7 @@ address {
 }
 
 :root{
+    --color-icon:#AFB1B8;
     --color-advantages: #757575;
     --color-plural:#2196F3;
     --color-body: #212121;
@@ -96,11 +97,15 @@ header {
 
 /************contactos ***************/
 .link-info {
+    display: flex;
+    gap: 10px;
     color: #757575;
     font-size: 14px;
     line-height: 1.1;
     font-weight: 500;
+    margin-bottom: 10px;
 }
+
 .info:hover,
 .link-info:hover,
 .link-info:focus{
@@ -109,18 +114,27 @@ header {
 .contact-menu {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-left: 150px;
+    justify-content: space-evenly;
+    margin-left: 110px;
 }
 
 .contact-menu>li {
     margin: 32px;
 }
-
+.icon-nav{
+    gap: 10px;
+    fill: var(--color-advantages);
+}
+.link-info:hover .icon-nav{
+    fill: var(--color-plural);
+}
 /************ seccion tittle ***********/
 
 .hero-tittle{
-    background-color: var(--color-background);
+    background-image: url("../img/student.jpg");
+    background-color: rgba(47, 48, 58, 0.4);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 200px;
     text-align: center;
     
@@ -130,7 +144,6 @@ header {
     font-size: 44px;
     line-height: 1.5;
     color: white;
-    width: 696px;
     margin: 20px auto;
     font-weight: 900;
 }
@@ -139,10 +152,12 @@ header {
 
 .button-service:hover {
     cursor: pointer;
-    color: var(--color-plural);
+    background-color: var(--color-plural);
+    color: var(--color-buttons);
+    
 }
 .button-service {
-    background: #2196F3;
+    background-color: #278bdd;
     color: #FFFFFF;
     padding: 10px 32px;
     font-size: 16px;
@@ -178,9 +193,25 @@ p {
     font-weight: 700;
 }
 
-
+/****** seccion iconos-advantages *******/
+.container-advantages{
+    background: #F5F4FA;
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+    padding: 35px 102px;
+    margin-bottom: 30px;
+}
+.icon-advantages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /****** seccion a que nos dedicamos ******/
+.team{
+    background-color: var(--color-buttons);
+}
 .subtitle-profession {
     display: flex;
     justify-content: center;
@@ -234,13 +265,12 @@ p {
     
 }
 
-.list-occupation li {
+.image-container {
     text-align: center;
+    border: 1px solid #eeeeee;
+    background-color: #FFFFFF;  
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    border: 1px solid #eeeeee;
-    cursor: pointer;
-    margin: 0 37px;
 }
 
 .list-occupation li h4 {
@@ -250,12 +280,71 @@ p {
 .list-occupation li p {
     margin-bottom: 30px;
 }
+/****** seccion iconos-redes *********/
+.icon-list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 8px;
+}
+.social-link-container{
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.social-link-container:hover{
+    background-color: var(--color-plural);
+}
+.social-link-container:hover .social-link-icon{
+    fill: #FFFFFF;
+}
+.social-link-icon{
+    fill: var(--color-icon);
+}
+
+
+/*** seccion clientes frecuentes ****/
+.icon-flex{
+    display: flex;
+    justify-content: center;
+    gap: 33px; 
+}
+.container-icon{
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 81px;
+    padding: 14px 32px;
+}
+.container-icon:hover {
+    border-color: #2196F3;
+    cursor: pointer;
+}
+.container-icon:hover .client-icon{
+    fill: #2196F3;
+}
+.client-icon{
+    fill: var(--color-icon);
+}
+.client-icon:hover {
+    fill: var(--color-plural);
+}
+
+.subtitle-client{
+    font-size: 36px;
+    font-weight: 700;
+    padding: 30px 0;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
 /********** footer info **********+*/
 .info{
     color: #ffffff;
     line-height: 1.7;
 }
-
 footer address .logo {
     font-family: "Raleway", sans-serif;
     font-size: 26px;
@@ -264,12 +353,43 @@ footer address .logo {
     color: var(--color-plural);
 }
 .footer-padding{
+    display: flex;
+    gap: 100px;
     padding: 50px 35px;
 }
 .footer-background {
     height: 270px;
     background: var(--color-background);
 }
+.list-icon-footer{
+    margin-top: 20px;
+    display: flex;
+    align-content: center;
+    gap: 10px
+}
+.subtittle-footer{
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    margin-top: 25px;
+}
+/* seccion footer-icon */
+.social-footer-container{
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.social-footer-container:hover{
+    background-color: var(--color-plural);
+}
+.social-footer-icon{
+    fill: #FFFFFF;
+}
+
 
 
 *******/* portafolio */******
@@ -305,9 +425,11 @@ footer address .logo {
 .list-button .filter-current{
     background-color: var(--color-plural);
     color: var(--color-buttons);
-
 }
-
+.button-portfolio .buttons:focus,
+.button-portfolio .buttons:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
 /***** seccion cards*****/
 .photos {
     width: 370px;
@@ -326,6 +448,7 @@ footer address .logo {
 .portfolio .item:hover{
     border: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
 }
 
 .cards{
