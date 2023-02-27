@@ -97,7 +97,8 @@ header {
 
 /************contactos ***************/
 .link-info {
-    display: flex;
+    display: flex;  
+    align-items: center;
     gap: 10px;
     color: #757575;
     font-size: 14px;
@@ -436,6 +437,8 @@ footer address .logo {
 }
 
 .articles {
+    color:var(--color-body);
+    padding: 20px 15px 1px 15px;
     font-weight: 700;
     line-height: 2;
 }
@@ -443,29 +446,22 @@ footer address .logo {
 .reference {
     color: var(--color-team);
     line-height: 2;
+    padding: 4px 15px;
+    margin-bottom: 15px;
 }
-
-.portfolio .item:hover{
+.item{
     border: 1px solid #EEEEEE;
+}
+.item:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
 }
 
-.cards{
-    margin-top: 0;
-}
 .portfolio{
     margin-bottom: 94px;
 }
-.portfolio .cards li h4{
-    color:var(--color-body);
-    padding: 15px;
-}
-.portfolio .cards li p{
-    color: var(--color-team);
-    padding: 15px;
-}
-.portfolio .cards {
+
+.cards {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
