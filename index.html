@@ -45,11 +45,23 @@
             </ul> 
     </header>
         </div>
+        
     <main> 
         
         <section class="section hero-tittle">
             <h1 class="tittle">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-                <button class="button-service" type="button">Solicite nuestro servicio</button>
+                <button class="button-service" type="button" data-modal-open>
+                    Solicite nuestro servicio
+                </button>
+
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <button class="go-out" data-modal-close>
+                            X
+                        </button>
+
+                    </div>
+                </div>
             
     </section>
     <div class="container">
@@ -59,6 +71,7 @@
         <h2 style="display: none;">NUESTRAS VENTAJAS</h2>
 
         <ul class="subtittle-advantages list">
+
             <li>
                 <div class="container-advantages">
                 <svg class="icon-advantages" width="55px" height="61px">
@@ -103,21 +116,27 @@
     </section>
         </div>
 
-            <!-- seccion que es lo que hacemos -->
+            <!-- seccion a que nos dedicamos-->
         <div class="container">    
+
     <section class="section what-is-do-we-do">
+        
         <h2 class="subtitle-profession">A qué nos dedicamos</h2>
         <ul class="list list-tecnic">
-            <li>
+
+            <li class="container-app">
                 <img class="image" src="./img/imagen1.jpg" alt="escribiendo en el teclado">
+                <p class="description-app">APLICACIONES DE ESCRITORIO</p>
             </li>
 
-            <li>
+            <li class="container-app">
                 <img class="image" src="./img/imagen2.jpg" alt="chequeo de telefono">
+                <p class="description-app">APLICACIONES MÓVILES</p>
             </li>
 
-            <li>
+            <li  class="container-app">
                 <img class="image" src="./img/imagen3.jpg" alt="verificando equipos">
+                <p class="description-app">SOLUCIONES DE DISEÑO</p>
             </li>
         </ul>
         </section>
@@ -386,6 +405,6 @@
 </div>
         </address>
     </footer> 
-
+        <script src="./js/modal.js"></script>
 </body>
 </html>

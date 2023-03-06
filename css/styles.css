@@ -73,9 +73,21 @@ header {
 .nav-menu{
     display: flex;
     justify-content: space-between;
-    align-content: center;
+}
+.nav-menu .nav-item-active {
+    position: relative;
 }
 
+.nav-menu .nav-item-active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -37px;
+    height: 4px;
+    width: 100%;
+    background-color: var(--color-plural);
+    border-radius: 2px;
+}
 .nav-bar .logo{
     display: flex;
     justify-content: center;
@@ -95,6 +107,7 @@ header {
     color: var(--color-plural);
 } 
 
+
 /************contactos ***************/
 .link-info {
     display: flex;  
@@ -104,7 +117,6 @@ header {
     font-size: 14px;
     line-height: 1.1;
     font-weight: 500;
-    margin-bottom: 9px;
 }
 
 .info:hover,
@@ -167,7 +179,40 @@ header {
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+}
+.go-out{
+    position: absolute;
+    right: 8px;
+    top: 8px
+}
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+    
+}
+.modal{
+    width: 528px;
+    height: 581px;
 
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-left: -265px;
+    margin-top: -270px;
+
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.is-hidden{
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
 }
 
 /********* seccion advantages *********/
@@ -232,11 +277,18 @@ p {
     width: 373px;
     height: 323px;
 }
-
-
-.image {
+.container-app{
+    position: relative;
+}
+.description-app{
+    position: absolute;
+    background: rgba(47, 48, 58, 0.8);
+    color: #FFFFFF;
+    text-align: center;
     width: 373px;
-    height: 323px;
+    height: 70px;
+    padding: 23px 79px;
+    bottom: 0px;
 }
 
 /********* seccion equipo **********/
@@ -427,6 +479,7 @@ footer address .logo {
     background-color: var(--color-plural);
     color: var(--color-buttons);
 }
+
 .button-portfolio .buttons:focus,
 .button-portfolio .buttons:hover {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -434,6 +487,7 @@ footer address .logo {
 /***** seccion cards*****/
 .photos {
     width: 370px;
+    height: 294px;
 }
 
 .articles {
@@ -456,6 +510,27 @@ footer address .logo {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
 }
+.card-animation{
+    position: absolute;
+    top: 0;
+    height: 294px;
+    width: 370px;
+    background: rgba(33, 150, 243, 0.9);
+    padding: 63px 24px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+
+    transform: translateY(101%);
+    transition: transform 250ms ease;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.item:hover .card-animation{
+    transform: translateY(0%);
+}
+.container-card{
+    position: relative;
+    overflow: hidden;
+}
 
 .portfolio{
     margin-bottom: 94px;
@@ -467,3 +542,5 @@ footer address .logo {
     gap: 20px;
     padding: 0 15px;
 }
+
+
