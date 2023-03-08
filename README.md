@@ -1,5 +1,3 @@
 ### LIve Demo
 
-https://andresurango10.github.io/goit-markup-hw-05/
-
- 
+https://github.com/AndresUrango10/goit-markup-hw-05.git
