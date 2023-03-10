@@ -67,6 +67,8 @@ header {
     justify-content: center;
     letter-spacing: 0.02em;
     font-weight: 500;
+}
+.border-bottom__gray{
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -193,6 +195,7 @@ header {
     width: 100%;
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.2);
+    visibility: visible;
     opacity: 1;
     transition: opacity 500ms ease-in;
 }
@@ -202,7 +205,7 @@ header {
     height: 581px;
     top:50%;
     left: 50%;
-    transform: translate(-50% , -50%) ;
+    transform: translate(-50% , -50%);
     transition: transform 500ms ease-in;
 
     background-color: #FFFFFF;
@@ -421,7 +424,6 @@ footer address .logo {
 .list-icon-footer{
     margin-top: 20px;
     display: flex;
-    align-content: center;
     gap: 10px
 }
 .subtittle-footer{
@@ -458,14 +460,14 @@ footer address .logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    }
+}
 
 .list-button{
     display: flex;
     align-items: center;
     justify-content: center;
     gap:15px;
-    }
+}
 
 .list-button li button {
     border: none;
