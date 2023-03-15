@@ -41,8 +41,8 @@
                     </svg>
                         +52 55 5529 6000 </a>
                 </li>
-        </nav>
             </ul> 
+        </nav>
     </header>
         </div>
         
@@ -57,8 +57,62 @@
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
                         <button class="go-out" data-modal-close>
-                            X
+                            <svg class="svg-modal" width="18px" height="18px">
+                                <use href="./img/icons.svg#icon-cerrar"></use>
+                            </svg>
                         </button>
+                        <p class="data">Deje sus datos, nos contactaremos con usted</p>
+
+                        <form class="modal-form">
+                            <label for="name">
+                                Nombre
+                            </label>
+                            
+                        <div class="container-form-icon">
+                                <input class="form-input" type="text" name="name" id="name" required>
+                            <svg class="icon-form" width="18px" height="18px">
+                                <use href="./img/icons.svg#icon-man"></use>
+                            </svg>
+                        </div>
+
+                        <label for="phone">
+                                Telefono
+                            </label>
+                            
+                        <div class="container-form-icon">
+                                <input class="form-input" type="tel" name="phone" id="phone" required>
+                            <svg class="icon-form" width="18px" height="18px">
+                                <use href="./img/icons.svg#icon-tel"></use>
+                            </svg>
+                        </div>
+
+                        <label for="email">
+                                E-mail
+                            </label>
+                            
+                        <div class="container-form-icon">
+                                <input class="form-input" type="email" name="email" id="email" required>
+                            <svg class="icon-form" width="18px" height="18px">
+                                <use href="./img/icons.svg#email-address"></use>
+                            </svg>
+                        </div>
+
+                        <label for="comments">Comentarios</label>
+                            <textarea class="textarea-form" name="comments" id="comments" cols="10" rows="10" placeholder="Introduzca el texto"></textarea>
+
+                            <label class="label-policy" for="policy">
+                                <input class="checkbox-input" type="checkbox" name="policy" id="policy">
+                                    <svg class="form-icon-checkbox" width="17px" height="13px">
+                                        <use href="./img/icons.svg#icon-revisado"></use>
+                                    </svg>
+                                <p class="form-text"> Estoy de acuerdo con el boletin informativo y acepto los
+                                <a class="link" href="">términos y condiciones</a></p>
+                            </label>
+                            
+                        
+                            
+                            <button class="button-form" type="submit" class="button-submit">Enviar</button>
+                        </form>
                     </div>
                 </div>
             
@@ -78,7 +132,7 @@
                 </svg>
                 </div>
                 <h3 class="details">ATENCIÓN A LOS DETALLES</h3>
-                <P>Nos adentramos en todos los detalles y procesos de su negocio, para así desarrollar una solución a su medida.</P>
+                <p class="description-advantages">Nos adentramos en todos los detalles y procesos de su negocio, para así desarrollar una solución a su medida.</p>
             </li>
 
             <li>
@@ -88,7 +142,7 @@
                 </svg>
                 </div>
                 <h3  class="details">PUNTUALIDAD</h3>
-                <p>Con nosotros, usted puede sentirse seguro y protegido. Un principio importante de la empresa: respetar su tiempo y
+                <p class="description-advantages">Con nosotros, usted puede sentirse seguro y protegido. Un principio importante de la empresa: respetar su tiempo y
                 respetar los plazos acordados.</p>
             </li>
 
@@ -109,7 +163,7 @@
                 </svg>
                 </div>
                 <h3  class="details">TECNOLOGIA MODERNA</h3>
-                <p>Usamos herramientas innovadoras para resolver las tareas asignadas. Es hora de simplificar los procesos laborales.</p>
+                <p class="description-advantages">Usamos herramientas innovadoras para resolver las tareas asignadas. Es hora de simplificar los procesos laborales.</p>
             </li>
         </ul>
     </section>
@@ -140,7 +194,8 @@
         </ul>
         </section>
         </div>
-            <!-- seccion equipo -->
+
+    <!-- seccion equipo -->
 
     <section class="section team">
             <h2 class="subtitle-team">Nuestro equipo</h2>
@@ -353,7 +408,7 @@
             </li>
 
             <li>
-            <a class="link-info link" href="mailto:info@example.com">
+            <a class="link-info link link-mg" href="mailto:info@example.com">
                 info@example.com</a>
             </li>
 
@@ -401,6 +456,21 @@
             </li>
         </ul>
     </div>
+
+            <form class="form-subscribe">
+            <label class="title-form-footer" for="user-email">Suscribase al boletin informativo</label>
+
+            <div class="container-form-subscribe">
+            <input class="email-footer" type="email" name="user-email" id="user-email"  placeholder="Correo electrónico" />
+
+            <button class="button-footer-form" type="submit" >
+                Suscribase
+                <svg class="icon-form-footer" width="24px" height="24px">
+                <use href="./img/icons.svg#enviar-icon"></use>
+                </svg>
+            </button>
+            </form>
+        </div>
 </div>
         </address>
     </footer> 
