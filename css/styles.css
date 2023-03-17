@@ -66,25 +66,40 @@ body {
 }
 
 **/*************** header *****************/
+
+.border-portafolio {
+  border: 1px solid #ECECEC;
+}
+/* .border-portafolio {
+  border: 1px solid #ECECEC;
+} */
+
 .nav-header {
   display: flex;
   align-items: center;
-}
-.nav-bar {
-  display: flex;
-  justify-content: center;
-  letter-spacing: 0.02em;
-  font-weight: 500;
+  justify-content: space-between;
   margin: 25px 0;
 }
-.border-bottom__gray {
-  border-bottom: 1px solid #ececec;
+header .logo {
+  width: 20%;
+  color: var(--color-plural);
+  font-size: 26px;
+  font-family: 'Raleway';
+  padding-left: 35px;
 }
-
-.nav-menu {
+.nav-bar{
+  width: 30%;
+}
+.nav-menu{
   display: flex;
-  align-items: center;
-  gap: 30px;
+  justify-content: flex-start;
+    gap: 45px;
+}
+.contact-menu{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 .nav-menu .nav-item-active {
   position: relative;
@@ -99,12 +114,6 @@ body {
   width: 100%;
   background-color: var(--color-plural);
   border-radius: 2px;
-}
-.nav-bar .logo {
-  margin-right: 180px;
-  color: var(--color-plural);
-  font-size: 26px;
-  font-family: 'Raleway';
 }
 .nav-menu .link {
   transition-property: color;
@@ -125,7 +134,6 @@ body {
   gap: 10px;
   color: #757575;
   font-size: 14px;
-  line-height: 1.1;
   font-weight: 500;
   transition-property: color;
   transition-duration: var(--transition-time);
@@ -139,13 +147,13 @@ body {
 .link-info:focus {
   color: var(--color-plural);
 }
-.contact-menu {
+/* .contact-menu {
   display: flex;
   align-items: center;
   margin-left: 200px;
   padding-top: 5px;
   gap: 25px;
-}
+} */
 .icon-nav {
   fill: var(--color-advantages);
   transition-property: fill;
@@ -379,7 +387,7 @@ body {
 }
 .list-advantages{
   width: 270px;
-  height: 251px;
+  height: auto;
 }
 
 .description-advantages {
