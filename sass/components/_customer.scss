@@ -1,0 +1,42 @@
+/******** CUSTOMER *********/
+
+.customer__list {
+    display: flex;
+    justify-content: center;
+    gap: 33px;
+}
+
+.customer__item {
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    width: 170px;
+    height: 81px;
+    padding: 14px 32px;
+    transition-property: border-color;
+    transition-duration: $transition-time;
+    transition-timing-function: $timing-function;
+    
+    &:hover {
+    border-color: $color-plural;
+    cursor: pointer;
+}
+}
+
+.customer__icon {
+    fill: $color-icon;
+
+    .customer__item:hover & {
+    fill: $color-plural;
+    transition-property: fill;
+    transition-duration: $transition-time;
+    transition-timing-function: $timing-function;
+}
+}
+
+.customer__subtitle {
+    font-size: 36px;
+    font-weight: 700;
+    padding: 30px 0;
+    text-align: center;
+    letter-spacing: 0.03em;
+}

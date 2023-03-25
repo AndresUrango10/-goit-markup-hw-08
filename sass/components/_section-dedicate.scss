@@ -1,0 +1,31 @@
+/****** DEDICATE ******/
+
+.dedicate__subtitle {
+    text-align: center;
+    margin-bottom: 55px;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.dedicate__list {
+    display: flex;
+    justify-content: center;
+    gap: 33px;
+}
+
+.dedicate__item {
+    position: relative;
+}
+
+.dedicate__description {
+    position: absolute;
+    background: rgba(47, 48, 58, 0.8);
+    color: #ffffff;
+    text-align: center;
+    width: 373px;
+    height: 70px;
+    padding: 23px 79px;
+    bottom: 0px;
+}

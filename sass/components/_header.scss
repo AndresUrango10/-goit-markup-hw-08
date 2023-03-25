@@ -1,0 +1,90 @@
+/******* HEADER ********/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 0;
+} 
+
+.header__border__gray {
+    border: 1px solid #ECECEC;
+}
+/** NAVIGATION**/
+.navegation {
+    width: 30%;
+}
+
+.navegation__list {
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-start;
+    gap: 45px;
+
+    .navegation--active{
+    position: relative;
+    color: $color-plural;
+    }
+    
+    .navegation--active::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -32px;
+    height: 4px;
+    width: 100%;
+    background-color: $color-plural;
+    border-radius: 2px;
+}
+}
+
+
+
+.navegation__list .navegation__link {
+    transition-property: color;
+    transition-duration: $transition-time;
+    transition-timing-function: var $timing-function;
+
+    &:hover,
+    &:focus{
+        color: $color-plural;
+    }
+
+}
+
+
+/** CONTACT **/
+
+.contact {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.contact__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: $color-team;
+    font-size: 14px;
+    font-weight: 500;
+    transition-property: color;
+    transition-duration: $transition-time;
+    transition-timing-function: $timing-function;
+
+    &:hover,
+    &:focus{
+            color: $color-plural;
+        }
+}
+
+.contact__icon {
+    fill: $color-advantages;
+    transition-property: fill;
+    transition-duration: $transition-time;
+    transition-timing-function: $timing-function;
+    
+    .contact__link:hover &,
+    .contact__link:focus & {
+        fill: $color-plural;
+    }
+}

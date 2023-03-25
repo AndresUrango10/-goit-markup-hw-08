@@ -1,0 +1,67 @@
+/********* CARDS PORTAFOLIO **********/
+.portafolio {
+    margin-bottom: 94px;
+}
+
+.portafolio__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 15px;
+}
+
+.portafolio__card {
+    border: 1px solid #eeeeee;
+    transition-property: box-shadow;
+    transition-duration: $transition-time;
+    transition-timing-function: $timing-function;
+
+    &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
+}
+
+.portafolio__container {
+    position: relative;
+    overflow: hidden;
+}
+
+.portafolio__photos {
+    width: 370px;
+    height: 294px;
+}
+
+.portafolio__animation {
+    position: absolute;
+    top: 0;
+    height: 294px;
+    width: 370px;
+    background: rgba(33, 150, 243, 0.9);
+    padding: 63px 24px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+
+    transform: translateY(101%);
+    transition: transform 250ms ease;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .portafolio__card:hover & {
+    transform: translateY(0%);
+}
+}
+
+.portafolio__articles {
+    color: $color-body;
+    padding: 20px 15px 1px 15px;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.portafolio__reference {
+    color: $color-team;
+    line-height: 2;
+    padding: 4px 15px;
+    margin-bottom: 15px;
+}

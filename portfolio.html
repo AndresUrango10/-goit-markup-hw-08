@@ -12,40 +12,46 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
     <title>Portafolio</title>
   </head>
       
   <body>
 
-<div class="border-portafolio"> 
+<div class="header__border__gray"> 
 
   <div class="container">
-    <header class="nav-header">
+    <header class="header">
       <!-- logo -->
-      <a class="logo link" href="index.html">Web Studio</a>
-        <nav class="nav-bar">
-            <!-- menu -->
-            <ul class="nav-menu list">
-                <li> <a class="link" href="index.html"> Estudio </a> </li>
-                <li> <a class="link nav-item-active" href="portfolio.html"> Portafolio </a> </li>
-                <li> <a class="link" href="#"> Contactos </a> </li>
+      <a class="logo header-logo__left link" href="index.html">Web Studio</a>
+      <!-- navegation -->
+        <nav class="navegation">
+            <ul class="navegation__list list">
+                <li  class="navegation__item"> 
+                  <a class="navegation__link link" href="index.html"> Estudio </a> 
+                </li>
+                <li  class="navegation__item"> 
+                  <a class="navegation__link link navegation--active" href="portfolio.html"> Portafolio </a> 
+                </li>
+                <li  class="navegation__item"> 
+                  <a class="navegation__link link" href="#"> Contactos </a> 
+                </li>
             </ul>
         </nav>
             <!-- contactos --> 
-            <ul class="contact-menu list"> 
-                <li>
-                    <a class="link-info link" href="mailto:info@devstudio.com" > 
-                    <svg class="icon-nav" width="16px" height="12px">
-                <use href="./img/icons.svg#icon-sobre"></use>
-                    </svg>
+            <ul class="contact list"> 
+                <li class="contact__item">
+                    <a class="contact__link link" href="mailto:info@devstudio.com" > 
+                      <svg class="contact__icon" width="16px" height="12px">
+                        <use href="./img/icons.svg#icon-sobre"></use>
+                      </svg>
                         info@devstudio.com</a>
                 </li>
-                <li>
-                    <a class="link-info link" href="tel:+52 55 5529 6000" >
-                        <svg class="icon-nav" width="10px" height="16px">
-                <use href="./img/icons.svg#icon-telfono-inteligente"></use>
-                    </svg>
+                <li class="contact__item">
+                    <a class="contact__link  link" href="tel:+52 55 5529 6000" >
+                      <svg class="contact__icon" width="10px" height="16px">
+                        <use href="./img/icons.svg#icon-telfono-inteligente"></use>
+                      </svg>
                         +52 55 5529 6000 </a>
                 </li>
             </ul> 
@@ -54,200 +60,210 @@
 </div>
 
 
-      <div class="container">
+<div class="container">
     <main>
           <!-- botones -->
-    <section class="margin-buttons button-portfolio ">
-    <ul class="list-button list">
-      <li><button class="buttons filter-current" type="button">Todo</button></li>
-      <li><button class="buttons" type="button">Sitios-web</button></li>
-      <li><button class="buttons" type="button">Aplicaciones</button></li>
-      <li><button class="buttons" type="button">Diseño</button></li>
-      <li><button class="buttons" type="button">Marketing</button></li>
+    <section class="btn">
+    <ul class="btn__list list">
+      <li>
+        <button class="btn__buttons btn__buttons--current" type="button">Todo</button>
+      </li>
+      <li>
+        <button class="btn__buttons" type="button">Sitios-web</button>
+      </li>
+      <li>
+        <button class="btn__buttons" type="button">Aplicaciones</button>
+      </li>
+      <li>
+        <button class="btn__buttons" type="button">Diseño</button>
+      </li>
+      <li>
+        <button class="btn__buttons" type="button">Marketing</button>
+      </li>
     </ul>
     </section>
 
           <!-- seccion tarjetas -->
-      <section class="portfolio">
+      <section class="portafolio">
         
-        <ul class="list cards">
+        <ul class="list portafolio__list">
 
-          <li class="item">
-              <div class="container-card">
-            <img class="photos" src="./img/imagen p.jpg"
+          <li class="portafolio__card">
+              <div class="portafolio__container">
+            <img class="portafolio__photos" src="./img/imagen p.jpg"
               alt="equipo tecnologico"/>
-              <p class="card-animation">Tecnoduck es una plataforma de distribución de coronavirus de última generación. Las compañías usan esta plataforma para el espionaje digital y los ataques a los servidores seguros de la competencia.</p>
+              <p class="portafolio__animation">Tecnoduck es una plataforma de distribución de coronavirus de última generación. Las compañías usan esta plataforma para el espionaje digital y los ataques a los servidores seguros de la competencia.</p>
               </div>
-            <h4 class="articles">Tecnoduck</h4>
-            <p class="reference">Sitio-web</p>
+            <h4 class="portafolio__articles">Tecnoduck</h4>
+            <p class="portafolio__reference">Sitio-web</p>
           </li>
 
-          <li class="item">
-              <div class="container-card">
-            <img class="photos" src="./img/imagen B.jpg" 
+          <li class="portafolio__card">
+              <div class="portafolio__container">
+            <img class="portafolio__photos" src="./img/imagen B.jpg" 
             alt="poster jugadores basketball" />
-            <p class="card-animation">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe asperiores atque maiores ipsam, eius mollitia error fugit velit aliquid ratione nam repellendus accusantium repudiandae accusamus laborum, harum fugiat molestiae dignissimos!</p>
+            <p class="portafolio__animation">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe asperiores atque maiores ipsam, eius mollitia error fugit velit aliquid ratione nam repellendus accusantium repudiandae accusamus laborum, harum fugiat molestiae dignissimos!</p>
               </div>
-            <h4 class="articles">Póster de Nueva Orleans vs Estrella Dorada</h4>
+            <h4 class="portafolio__articles">Póster de Nueva Orleans vs Estrella Dorada</h4>
           </li>
 
-          <li class="item">
-              <div class="container-card">
-            <img class="photos" src="./img/imagen T.jpg" 
+          <li class="portafolio__card">
+              <div class="portafolio__container">
+            <img class="portafolio__photos" src="./img/imagen T.jpg" 
             alt="logo restaurante"/>
-            <p class="card-animation">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe asperiores atque maiores ipsam, eius mollitia error fugit velit aliquid ratione nam repellendus accusantium repudiandae accusamus laborum, harum fugiat molestiae dignissimos!</p>
+            <p class="portafolio__animation">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe asperiores atque maiores ipsam, eius mollitia error fugit velit aliquid ratione nam repellendus accusantium repudiandae accusamus laborum, harum fugiat molestiae dignissimos!</p>
               </div>
-            <h4 class="articles">Restaurante Seafood</h4>
-            <p  class="reference">Aplicaciones</p>
+            <h4 class="portafolio__articles">Restaurante Seafood</h4>
+            <p  class="portafolio__reference">Aplicaciones</p>
           </li>
 
-          <li class="item">
-              <div class="container-card">
-            <img class="photos" src="./img/imagen A.jpg" 
+          <li class="portafolio__card">
+              <div class="portafolio__container">
+            <img class="portafolio__photos" src="./img/imagen A.jpg" 
             alt="Diademas" />
-            <p class="card-animation">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe asperiores atque maiores ipsam, eius mollitia error fugit velit aliquid ratione nam repellendus accusantium repudiandae accusamus laborum, harum fugiat molestiae dignissimos!</p>
+            <p class="portafolio__animation">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe asperiores atque maiores ipsam, eius mollitia error fugit velit aliquid ratione nam repellendus accusantium repudiandae accusamus laborum, harum fugiat molestiae dignissimos!</p>
               </div>
-            <h4 class="articles">Proyecto Prime</h4>
-            <p  class="reference">Marketing</p>
+            <h4 class="portafolio__articles">Proyecto Prime</h4>
+            <p  class="portafolio__reference">Marketing</p>
           </li>
 
-          <li class="item">
-              <div class="container-card">
-            <img class="photos" src="./img/imagen C.jpg" 
+          <li class="portafolio__card">
+              <div class="portafolio__container">
+            <img class="portafolio__photos" src="./img/imagen C.jpg" 
             alt="Cajas"/>
-            <p class="card-animation">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe asperiores atque maiores ipsam, eius mollitia error fugit velit aliquid ratione nam repellendus accusantium repudiandae accusamus laborum, harum fugiat molestiae dignissimos!</p>
+            <p class="portafolio__animation">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe asperiores atque maiores ipsam, eius mollitia error fugit velit aliquid ratione nam repellendus accusantium repudiandae accusamus laborum, harum fugiat molestiae dignissimos!</p>
               </div>
-            <h4 class="articles">Proyecto cajas</h4>
-            <p  class="reference">Aplicaciones</p>
+            <h4 class="portafolio__articles">Proyecto cajas</h4>
+            <p  class="portafolio__reference">Aplicaciones</p>
           </li>
 
-          <li class="item">
-              <div class="container-card">
-            <img class="photos" src="./img/imagen P2.jpg" 
+          <li class="portafolio__card">
+              <div class="portafolio__container">
+            <img class="portafolio__photos" src="./img/imagen P2.jpg" 
             alt="ordenador"/>
-            <p class="card-animation">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe asperiores atque maiores ipsam, eius mollitia error fugit velit aliquid ratione nam repellendus accusantium repudiandae accusamus laborum, harum fugiat molestiae dignissimos!</p> 
+            <p class="portafolio__animation">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe asperiores atque maiores ipsam, eius mollitia error fugit velit aliquid ratione nam repellendus accusantium repudiandae accusamus laborum, harum fugiat molestiae dignissimos!</p> 
               </div>
-            <h4 class="articles">La inspiración no tiene limites</h4>
-            <p  class="reference">Sitio-web</p>
+            <h4 class="portafolio__articles">La inspiración no tiene limites</h4>
+            <p  class="portafolio__reference">Sitio-web</p>
           </li>
 
-          <li class="item">
-              <div class="container-card">
-            <img class="photos" src="./img/imagen L.jpg" 
+          <li class="portafolio__card">
+              <div class="portafolio__container">
+            <img class="portafolio__photos" src="./img/imagen L.jpg" 
             alt="revista"/>
-            <p class="card-animation">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe asperiores atque maiores ipsam, eius mollitia error fugit velit aliquid ratione nam repellendus accusantium repudiandae accusamus laborum, harum fugiat molestiae dignissimos!</p> 
+            <p class="portafolio__animation">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe asperiores atque maiores ipsam, eius mollitia error fugit velit aliquid ratione nam repellendus accusantium repudiandae accusamus laborum, harum fugiat molestiae dignissimos!</p> 
               </div>
-            <h4 class="articles">Edición limitada</h4>
-            <p  class="reference">Diseño</p>
+            <h4 class="portafolio__articles">Edición limitada</h4>
+            <p  class="portafolio__reference">Diseño</p>
           </li>
 
-          <li class="item">
-              <div class="container-card">
-            <img class="photos" src="./img/imagen E.jpg" 
+          <li class="portafolio__card">
+              <div class="portafolio__container">
+            <img class="portafolio__photos" src="./img/imagen E.jpg" 
             alt="etiqueta"/>
-            <p class="card-animation">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe asperiores atque maiores ipsam, eius mollitia error fugit velit aliquid ratione nam repellendus accusantium repudiandae accusamus laborum, harum fugiat molestiae dignissimos!</p> 
+            <p class="portafolio__animation">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe asperiores atque maiores ipsam, eius mollitia error fugit velit aliquid ratione nam repellendus accusantium repudiandae accusamus laborum, harum fugiat molestiae dignissimos!</p> 
               </div>
-            <h4 class="articles">Proyecto LAB</h4>
-            <p  class="reference">marketing</p>
+            <h4 class="portafolio__articles">Proyecto LAB</h4>
+            <p  class="portafolio__reference">marketing</p>
           </li>
 
-          <li class="item">
-              <div class="container-card">
-            <img class="photos" src="./img/imagen M.jpg" 
+          <li class="portafolio__card">
+              <div class="portafolio__container">
+            <img class="portafolio__photos" src="./img/imagen M.jpg" 
             alt="esccribiendo en portatil" />
-            <p class="card-animation">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe asperiores atque maiores ipsam, eius mollitia error fugit velit aliquid ratione nam repellendus accusantium repudiandae accusamus laborum, harum fugiat molestiae dignissimos!</p> 
+            <p class="portafolio__animation">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe asperiores atque maiores ipsam, eius mollitia error fugit velit aliquid ratione nam repellendus accusantium repudiandae accusamus laborum, harum fugiat molestiae dignissimos!</p> 
               </div>
-            <h4 class="articles">Negocio de crecimiento</h4>
-            <p  class="reference">Aplicaciones</p>
+            <h4 class="portafolio__articles">Negocio de crecimiento</h4>
+            <p  class="portafolio__reference">Aplicaciones</p>
           </li>
           
         </ul>
       </section>
     </main>
-      </div>
-        <!-- footer info -->
-    <footer>
-        <address class="footer-background">
-<div class="container footer-padding">
-    <div>
-        <a class="logo link" href="#">Web studio </a>
-
-        <ul class="list">
-            <li>
-            <a
-                class="info link"
-                href="Calz,Ticomán500,CiudaddeMéxico,CDMX,México,Mexico">
-                Calz, Ticomán 500, Ciudad de <br/>
-                México,CDMX,Mexico</a>
-            </li>
-
-            <li>
-            <a class="link-info link link-mg" href="mailto:info@example.com">
-                info@example.com</a>
-            </li>
-
-            <li>
-            <a class="link-info link" href="tel:+525555296000 ">
-                +525555296000</a>
-            </li>
-        </ul>
-    </div>
-
-    <div>
-        <h6 class="subtittle-footer">ENCUENTRENOS EN</h6>
-        <ul class="list-icon-footer list">
-
-            <li class="social-footer-container">
-            <a href="#">
-                <svg class="social-footer-icon" width="20" height="20">
-                <use href="./img/icons.svg#icon-instagram"></use>
-                </svg>
-            </a>
-            </li>
-
-            <li class="social-footer-container">
-            <a href="#">
-                <svg class="social-footer-icon" width="20" height="20">
-                <use href="./img/icons.svg#icon-twitter"></use>
-                </svg>
-            </a>
-            </li>
-
-            <li class="social-footer-container">
-            <a href="#">
-                <svg class="social-footer-icon" width="20" height="20">
-                <use href="./img/icons.svg#icon-facebook"></use>
-                </svg>
-            </a>
-            </li>
-            
-            <li class="social-footer-container">
-            <a href="#">
-                <svg class="social-footer-icon" width="20" height="20">
-                <use href="./img/icons.svg#icon-linkedin"></use>
-                </svg>
-            </a>
-            </li>
-        </ul>
-    </div>
-
-      <form class="form-subscribe">
-            <label class="title-form-footer" for="user-email">Suscribase al boletin informativo</label>
-
-            <div class="container-form-subscribe">
-            <input class="email-footer" type="email" name="user-email" id="user-email"  placeholder="Correo electrónico" />
-
-            <button class="button-footer-form" type="submit" >
-                Suscribase
-                <svg class="icon-form-footer" width="24px" height="24px">
-                <use href="./img/icons.svg#enviar-icon"></use>
-                </svg>
-            </button>
-            </form>
-        </div>
 </div>
-        </address>
-    </footer> 
+        <!-- footer info -->
+<footer class="footer footer--background">
+    <address>
+        <div class="container footer--padding">
+            <div class="footer__container">
+                <a class="logo link" href="#">Web studio </a>
+
+                <ul class=" footer__list list">
+                    <li>
+                    <a
+                        class="footer__info link"
+                        href="#">
+                        Calz, Ticomán 500, Ciudad de <br/>
+                        México,CDMX,Mexico</a>
+                    </li>
+
+                    <li>
+                        <a class="footer__link link" href="mailto:info@example.com">
+                        info@example.com</a>
+                    </li>
+
+                    <li>
+                        <a class="footer__link link" href="tel:+525555296000 ">
+                        +525555296000</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="social">
+                <h6 class="social__subtittle">ENCUENTRENOS EN</h6>
+                <ul class="social__list list">
+
+                    <li class="social__item">
+                    <a href="#">
+                        <svg class="social__icon" width="20" height="20">
+                        <use href="./img/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                    </li>
+
+                    <li class="social__item">
+                    <a href="#">
+                        <svg class="social__icon" width="20" height="20">
+                        <use href="./img/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                    </li>
+
+                    <li class="social__item">
+                    <a href="#">
+                        <svg class="social__icon" width="20" height="20">
+                        <use href="./img/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                    </li>
+                    
+                    <li class="social__item">
+                    <a href="#">
+                        <svg class="social__icon" width="20" height="20">
+                        <use href="./img/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+
+                <form class="subscribe">
+                    <label class="subscribe__title" for="user-email">Suscribase al boletin informativo</label>
+
+            <div class="subscribe__container">
+                    <input class="subscribe__input" type="email" name="user-email" id="user-email"  placeholder="Correo electrónico" />
+
+                    <button class="btn-primary subscribe__btn" type="submit" >
+                        Suscribase
+                        <svg class="subscribe__icon" width="24px" height="24px">
+                        <use href="./img/icons.svg#enviar-icon"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </address>
+</footer> 
 
   </body>
 </html>
