@@ -12,7 +12,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="sass/main.css" />
     <title>Portafolio</title>
   </head>
       
@@ -55,6 +55,31 @@
                         +52 55 5529 6000 </a>
                 </li>
             </ul> 
+            <!-- MENU TOGGLE -->
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="40px" height="40px">
+                    <use href="./img/icons.svg#menu-toggle"></use>
+                    </svg>
+                </button>
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <button class="menu-toggle js-close-menu">
+                    <svg  width="18px" height="18px">
+                        <use href="./img/icons.svg#icon-cerrar"></use>
+                    </svg>
+                </button>
+        
+                <ul class="mobile-menu">
+                    <li class="navegation__item"> 
+                        <a class="navegation__link link navegation--active" href="index.html"> Estudio </a> 
+                    </li>
+                    <li class="navegation__list"> 
+                        <a class="navegation__link link" href="portfolio.html"> Portafolio </a> 
+                    </li>
+                    <li class="navegation__list"> 
+                        <a class="navegation__link link" href="#"> Contactos </a> 
+                    </li>
+                </ul>
+            </div>
     </header>
   </div>
 </div>
@@ -105,6 +130,7 @@
             <p class="portafolio__animation">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe asperiores atque maiores ipsam, eius mollitia error fugit velit aliquid ratione nam repellendus accusantium repudiandae accusamus laborum, harum fugiat molestiae dignissimos!</p>
               </div>
             <h4 class="portafolio__articles">Póster de Nueva Orleans vs Estrella Dorada</h4>
+            <p  class="portafolio__reference">Diseño</p>
           </li>
 
           <li class="portafolio__card">
@@ -264,6 +290,12 @@
         </div>
     </address>
 </footer> 
-
+      <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous">
+    </script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

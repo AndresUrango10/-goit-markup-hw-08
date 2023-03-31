@@ -3,8 +3,20 @@
     color: $color-plural;
     font-size: 26px;
     font-family: 'Raleway';
+    
+    @media screen and (max-width: 1200px) {
+        width: 30%;
+    }
+        @media screen and (max-width: 768px) {
+            width: 45%;
+        }
+        
 }
 
 .header-logo__left {
     padding-left: 20px;
+
+    @media screen and (max-width: 768px) {
+            padding: 0;
+        }
 }

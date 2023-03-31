@@ -40,3 +40,30 @@
     text-align: center;
     letter-spacing: 0.03em;
 }
+@media screen and (max-width: 1200px) {
+    .customer__list{
+        flex-wrap: wrap;
+        width: 768px;
+    }
+    .customer__item{
+        width: 226px;
+    }
+    .customer__icon{
+        display: block;
+        margin: 0 auto;
+    }
+    .customer__subtitle{
+        display: block;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .customer__list {
+        width: 480px;
+        height: auto    ;
+    }
+    .customer__item{
+        width: 210px;
+        height: auto;
+    }
+}

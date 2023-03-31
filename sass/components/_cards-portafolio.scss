@@ -23,6 +23,19 @@
 }
 }
 
+    @media screen and (max-width: 1200px) {
+        .portafolio__card{
+        width: 354px;
+        height: 440px;
+        }
+    }
+        @media screen and (max-width: 768px) {
+            .portafolio__card {
+                width: 450px;
+                height: auto;
+            }
+        }
+
 .portafolio__container {
     position: relative;
     overflow: hidden;
@@ -32,7 +45,13 @@
     width: 370px;
     height: 294px;
 }
+@media screen and (max-width: 768px) {
 
+    .portafolio__photos {
+        width: 450px;
+        height: 404px;
+}
+}
 .portafolio__animation {
     position: absolute;
     top: 0;
@@ -50,6 +69,13 @@
     .portafolio__card:hover & {
     transform: translateY(0%);
 }
+}
+@media screen and (max-width: 768px) {
+
+    .portafolio__animation {
+        width: 450px;
+        height: 404px;
+    }
 }
 
 .portafolio__articles {

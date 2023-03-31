@@ -29,3 +29,9 @@
     padding: 23px 79px;
     bottom: 0px;
 }
+
+@media screen and (max-width: 1200px) {
+    .dedicate{
+        display: none;
+    }
+}

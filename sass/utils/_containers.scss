@@ -1,8 +1,22 @@
 .section {
     padding: 94px 0;
+
+    @media screen and (max-width: 1200px) {
+        padding: 45px 0;
+    }
 }
 
 .container {
     width: 1200px;
     margin: 0 auto;
+
+    @media screen and (max-width: 1200px){
+    width: 768px;
+    }
+
+    @media screen and (max-width: 768px){
+    
+    width: 480px;
+    
+}
 }

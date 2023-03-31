@@ -128,3 +128,62 @@
 .subscribe__icon {
     fill: #ffffff;
 }
+@media screen and (max-width: 1200px) {
+    .footer--background{
+        height: auto;
+        width: 100%;
+    }
+    .footer--padding{
+        flex-wrap: wrap;
+        width: 768px;
+    }
+    .subscribe{
+        margin: 50px auto;
+    }
+    .footer__container{
+        text-align: center;
+        margin-left: 50px;
+    }
+    .subscribe__container{
+        display: block;
+    }
+    .subscribe__input{
+        width: 450px;
+    }
+    .social{
+        margin-right:50px
+    }
+    .subscribe__btn{
+        margin: 20px auto;
+    }
+    .subscribe__title{
+        display: block;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:768px) {
+        .footer--padding {
+            width: 480px;
+            justify-content: center;
+        }
+        
+        .footer__container{
+            width: 100%;
+            margin: 0;
+        }
+        .social{
+            width: 100%;
+            margin: 0;
+        }
+        .social__subtittle{
+            display: flex;
+            justify-content: center;
+        }
+        .social__list{
+            justify-content: center;
+        }
+        .subscribe__title{
+            display: flex;
+            justify-content: center;
+        }
+}

@@ -8,20 +8,18 @@
     background-size: cover;
     padding: 200px;
     text-align: center;
-    
-    .hero__container {
-        width: 676px;
-        height: auto;
-        margin: 0 auto;
-    }
-
-    .hero__title {
-        font-weight: 900;
-        font-size: 44px;
-        color: white;
-    }
 }
 
+.hero__container {
+    width: 676px;
+    height: auto;
+    margin: 0 auto;
+}
+.hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    color: white;
+}
 
 .button-service {
     padding: 15px 25px;
@@ -34,4 +32,36 @@
     &:hover{
             background-color: $color-plural;
         }
+}
+
+@media screen and (max-width: 1200px){
+    .hero{
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        padding: 130px;
+    }
+    .hero__title{
+        font-size: 26px;
+    }
+    .hero__container{
+        width: 360px;
+    }
+}
+@media screen  and (max-width: 678px) {
+    .hero {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        padding: 60px;
+    }
+
+    .hero__title {
+        font-size: 26px;
+    }
+
+    .hero__container {
+        width: 360px;
+        height: auto;
+    }
 }
