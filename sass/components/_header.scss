@@ -151,9 +151,6 @@
 }
 }
 
-
-
-
 .menu-toggle:hover,
 .menu-toggle:focus {
     background-color: rgba(0, 0, 0, 0.1);
@@ -163,10 +160,13 @@
     fill: $color-plural;
 }
 .menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     padding: 32px;
     background-color: #fff;
@@ -199,6 +199,34 @@
     font-size: 40px;
     font-weight: 500;
     display: block;
-    padding: 10px;
-    text-decoration: none;
+    padding: 10px 0;
+}
+.mobile-contact__item{
+    padding: 10px 0;
+}
+.mobile-contact__link{
+    font-size: 23px;
+    color: $color-advantages;
+    font-weight: 500;
+}
+.mobile-contact__link--active{
+    font-weight: 500;
+    font-size: 34px;
+}
+.mobile-contact__link:hover,
+.mobile-contact__link:focus,
+.mobile-contact__link--active{
+    color: $color-plural;
+}
+
+.mobile-social{
+    display: flex;
+    gap: 10px;
+}
+.mobile-social__link{
+    font-size: 18px;
+    color: $color-plural;
+}
+.mobile-social__item{
+    font-weight: 500;
 }

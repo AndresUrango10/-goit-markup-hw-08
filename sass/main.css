@@ -226,10 +226,13 @@ body {
 }
 
 .menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   padding: 32px;
   background-color: #fff;
@@ -263,8 +266,42 @@ body {
   font-size: 40px;
   font-weight: 500;
   display: block;
-  padding: 10px;
-  text-decoration: none;
+  padding: 10px 0;
+}
+
+.mobile-contact__item {
+  padding: 10px 0;
+}
+
+.mobile-contact__link {
+  font-size: 23px;
+  color: #757575;
+  font-weight: 500;
+}
+
+.mobile-contact__link--active {
+  font-weight: 500;
+  font-size: 34px;
+}
+
+.mobile-contact__link:hover,
+.mobile-contact__link:focus,
+.mobile-contact__link--active {
+  color: #2196f3;
+}
+
+.mobile-social {
+  display: flex;
+  gap: 10px;
+}
+
+.mobile-social__link {
+  font-size: 18px;
+  color: #2196f3;
+}
+
+.mobile-social__item {
+  font-weight: 500;
 }
 
 .logo {
@@ -286,11 +323,6 @@ body {
 
 .header-logo__left {
   padding-left: 20px;
-}
-@media screen and (max-width: 768px) {
-  .header-logo__left {
-    padding: 0;
-  }
 }
 
 /******* HERO ********/
@@ -340,7 +372,7 @@ body {
     width: 360px;
   }
 }
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 768px) {
   .hero {
     width: 100%;
     height: auto;
@@ -600,7 +632,7 @@ body {
     height: 251px;
   }
 }
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 768px) {
   .advantages__list {
     width: 480px;
   }
@@ -1012,7 +1044,7 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 768px) {
   .btn__list {
     width: 362px;
     flex-wrap: wrap;

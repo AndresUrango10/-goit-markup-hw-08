@@ -51,16 +51,17 @@
         height: 251px;
     }
 }
-@media screen and (max-width: 678px){
-        .advantages__list {
-            width: 480px
-        }
-        .advantages__item {
-            width: 450px;
-            height: auto;
-        }
-        .advantages__container{
+
+@media screen and (max-width: 768px) {
+    .advantages__list {
+        width: 480px;
+    }
+    .advantages__item {
         width: 450px;
         height: auto;
+    }
+    .advantages__container{
+    width: 450px;
+    height: auto;
     }
 }
