@@ -3,17 +3,30 @@
     color: $color-plural;
     font-size: 26px;
     font-family: 'Raleway';
-    
-    @media screen and (max-width: 1200px) {
-        width: 30%;
-    }
-        @media screen and (max-width: 768px) {
-            width: 45%;
-        }
-        
+
+    @media screen and (min-width: 480px) {
+        width: 50%;
 }
 
-.header-logo__left {
-    padding-left: 20px;
+@media screen and (min-width: 768px) {
+        width: 25%;
+}
+@media screen and (min-width: 1200px) {
+    width: 20%;
+}
 
 }
+.header-logo__left{
+    @media screen and (min-width: 480px) {
+        padding-left: 10px;
+}
+@media screen and (min-width: 1200px) {
+        padding-left: 25px;
+}
+
+}
+
+
+
+
+

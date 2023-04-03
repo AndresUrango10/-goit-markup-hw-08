@@ -9,8 +9,6 @@
 .customer__item {
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    width: 170px;
-    height: 81px;
     padding: 14px 32px;
     transition-property: border-color;
     transition-duration: $transition-time;
@@ -40,7 +38,25 @@
     text-align: center;
     letter-spacing: 0.03em;
 }
-@media screen and (max-width: 1200px) {
+
+
+@media screen and (min-width: 480px) {
+    .customer__list {
+        flex-wrap: wrap;
+        width: 480px;
+        height: auto    ;
+    }
+    .customer__item{
+        width: 210px;
+        height: auto;
+    }
+    .customer__icon{
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
     .customer__list{
         flex-wrap: wrap;
         width: 768px;
@@ -57,13 +73,12 @@
         margin: 0 auto;
     }
 }
-@media screen and (max-width: 768px) {
-    .customer__list {
-        width: 480px;
-        height: auto    ;
+@media screen and (min-width: 1200px){
+    .customer__list{
+        width: 1200px;
     }
     .customer__item{
-        width: 210px;
-        height: auto;
+        width: 170px;
+        height: 81px;
     }
 }

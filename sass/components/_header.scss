@@ -3,23 +3,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 25px 0;
-
-
-    @media screen and (max-width: 1200px) {
-        width: 768px;
-        display: flex;
-        justify-content: space-evenly;
-        gap: 43px;
-        margin: 14px 0;
-    }
-
-    @media screen and (max-width: 768px) {
-        width: 480px;
-        justify-content: space-between;
-        padding-right: 15px;
-    }
-
 } 
 
 .header__border__gray {
@@ -28,16 +11,6 @@
 /** NAVIGATION**/
 .navegation {
     width: 30%;
-
-    @media screen and (max-width: 1200px) {
-        width: 400px;
-        display: flex;
-        justify-content: center;
-    }
-
-    @media screen and (max-width: 768px) {
-        display: none;
-    }
 }
 
 .navegation__list {
@@ -63,8 +36,6 @@
 }
 }
 
-
-
 .navegation__list .navegation__link {
     transition-property: color;
     transition-duration: $transition-time;
@@ -87,20 +58,10 @@
     justify-content: center;
     gap: 20px;
 
-    @media screen and (max-width: 1200px) {
-        display: block;
-}
-    @media screen and (max-width: 768px) {
-        display: none;
-}
 }
 
-@media screen and (max-width: 1200px) {
-    .contact__item{
-        padding-top: 10px;
-        padding-left: 40px;
-    }
-}
+
+
 .contact__link {
     display: flex;
     align-items: center;
@@ -145,10 +106,6 @@
     border-radius: 50%;
     outline: none;
 
-    @media screen and (min-width: 769px) {
-    
-        display:none;
-}
 }
 
 .menu-toggle:hover,
@@ -229,4 +186,64 @@
 }
 .mobile-social__item{
     font-weight: 500;
+}
+
+@media screen and (min-width: 480px) {
+    .header{
+        width: 480px;
+    }
+    
+    .navegation{
+        display: none;
+    }
+    
+    .contact{
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    .header{
+        width: 768px;
+        gap: 30px;
+        margin: 14px 0;
+    }
+
+    .navegation{
+        display: inline-block;
+        width: 35%;
+    }
+    .navegation__list{
+        gap: 30px;
+        
+    }
+    
+    .contact{
+        display: block;
+        width: 25%;
+    }
+
+    .contact__link{
+        padding-top: 10px;
+    }
+    .menu-toggle{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .header {
+            width: 1200px;
+            margin: 25px 0;
+        }
+    
+        .contact {
+            display: flex;
+            width: 30%;
+        }
+        .contact__link{
+            padding: 0;
+        }
 }

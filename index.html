@@ -9,7 +9,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="sass/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <title>Web</title>
 </head>
 <body> 
@@ -232,17 +232,26 @@
         <ul class="list dedicate__list">
 
             <li class="dedicate__item">
-                <img class="dedicate__image" src="./img/imagen1.jpg" alt="escribiendo en el teclado">
+                <picture>
+                <source media="(min-width: 1200px)" srcset="./img/dedicate/desktop/dedicate1.jpg 1x, ./img/dedicate/desktop/dedicate1@2x.jpg 2x"/>
+                <img class="dedicate__image" src="./img/dedicate/desktop/dedicate1.jpg" alt="escribiendo en el teclado" width="370">
+                </picture>
                 <p class="dedicate__description">APLICACIONES DE ESCRITORIO</p>
             </li>
 
             <li class="dedicate__item">
-                <img class="dedicate__image" src="./img/imagen2.jpg" alt="chequeo de telefono">
+                <picture>
+                <source media="(min-width: 1200px)" srcset="./img/dedicate/desktop/dedicate2.jpg 1x, ./img/dedicate/desktop/dedicate2@2x.jpg 2x"/>
+                <img class="dedicate__image" src="./img/dedicate/desktop/dedicate2.jpg" alt="chequeo de telefono" width="370">
+                </picture>
                 <p class="dedicate__description">APLICACIONES MÓVILES</p>
             </li>
 
             <li  class="dedicate__item">
-                <img class="dedicate__image" src="./img/imagen3.jpg" alt="verificando equipos">
+                <picture>
+                <source media="(min-width: 1200px)" srcset="./img/dedicate/desktop/dedicate3.jpg 1x, ./img/dedicate/desktop/dedicate3@2x.jpg 2x"/>
+                <img class="dedicate__image" src="./img/dedicate/desktop/dedicate3.jpg" alt="verificando equipos" width="370">
+                </picture>
                 <p class="dedicate__description">SOLUCIONES DE DISEÑO</p>
             </li>
         </ul>
@@ -256,7 +265,14 @@
     <div class="container"> 
         <ul class="list team__container">
             <li class="team__card"> 
-                <img class="team__image" src="./img/imagen4.jpg" alt="este es un integrante masculino" >
+
+                <picture>
+                <source media="(min-width: 1200px)" srcset="./img/team/desktop/team1.jpg 1x, ./img/team/desktop/team1@2x.jpg 2x"/>
+                <source media="(min-width: 768px)" srcset="./img/team/tablet/team1.jpg 1x,  ./img/team/tablet/team1@2x.jpg 2x"/>
+                <source media="(min-width: 480px)" srcset="./img/team/mobil/team1.jpg 1x, ./img/team/mobil/team1@2x.jpg 2x"/>
+                <img class="team__image" src="./img/team/desktop/team1.jpg" alt="este es un integrante masculino" >
+                </picture>
+
                 <h4 class="team__name">Andrés Cubo</h4>
                 <p class="team__occupation">Diseñador de Productos</p>
 
@@ -297,7 +313,13 @@
             </li>    
 
             <li class="team__card">
-                <img class="team__image" src="./img/imagen5.jpg" alt="esta es una integrante femenina" >
+                <picture>
+                <source media="(min-width: 1200px)" srcset="./img/team/desktop/team2.jpg 1x, ./img/team/desktop/team2@2x.jpg 2x"/>
+                <source media="(min-width: 768px)" srcset="./img/team/tablet/team2.jpg 1x,  ./img/team/tablet/team2@2x.jpg 2x"/>
+                <source media="(min-width: 480px)" srcset="./img/team/mobil/team2.jpg 1x, ./img/team/mobil/team2@2x.jpg 2x"/>
+                <img class="team__image" src="./img/team/desktop/team2.jpg" alt="esta es una integrante femenina" >
+                </picture>
+
                 <h4 class="team__name">Carla Palacios</h4>
                 <p class="team__occupation">Desarrolladora Frontend</p>
 
@@ -337,7 +359,13 @@
             </li>
 
             <li class="team__card">
-                <img class="team__image" src="./img/imagen6.jpg" alt="este es un integrante masculino" >
+                <picture>
+                <source media="(min-width: 1200px)" srcset="./img/team/desktop/team3.jpg 1x, ./img/team/desktop/team3@2x.jpg 2x"/>
+                <source media="(min-width: 768px)" srcset="./img/team/tablet/team3.jpg 1x,  ./img/team/tablet/team3@2x.jpg 2x"/>
+                <source media="(min-width: 480px)" srcset="./img/team/mobil/team3.jpg 1x, ./img/team/mobil/team3@2x.jpg 2x"/>
+                <img class="team__image" src="./img/team/desktop/team3.jpg" alt="este es un integrante masculino" >
+                </picture>
+
                 <h4 class="team__name">Mario Dorado</h4>
                 <p  class="team__occupation">Marketing</p>
 
@@ -377,7 +405,13 @@
             </li>
 
             <li class="team__card">
-                <img class="team__image" src="./img/imagen7.jpg" alt="este es un integrante masculino" >
+                <picture>
+                <source media="(min-width: 1200px)" srcset="./img/team/desktop/team4.jpg 1x, ./img/team/desktop/team4@2x.jpg 2x"/>
+                <source media="(min-width: 768px)" srcset="./img/team/tablet/team4.jpg 1x,  ./img/team/tablet/team4@2x.jpg 2x"/>
+                <source media="(min-width: 480px)" srcset="./img/team/mobil/team4.jpg 1x, ./img/team/mobil/team4@2x.jpg 2x"/>
+                <img class="team__image" src="./img/team/desktop/team4.jpg" alt="este es un integrante masculino" >
+                </picture>
+
                 <h4 class="team__name">Pablo Mijangos</h4>
                 <p  class="team__occupation">Diseñador IU</p>
 
@@ -461,7 +495,7 @@
 
 
             <!-- footer info -->
-            <footer class="footer footer--background">
+<footer class="footer footer--background">
     <address class="">
         <div class="container footer--padding">
             <div class="footer__container">

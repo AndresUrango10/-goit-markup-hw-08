@@ -1,15 +1,5 @@
 /******* FOOTER ********/
 
-.footer--padding {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 22px;
-}
-
-.footer__container {
-    margin-top: 15px;
-}
-
 .footer__list {
     margin-top: 10px;
 }
@@ -54,7 +44,6 @@
     font-size: 14px;
     letter-spacing: 0.03em;
     color: #ffffff;
-    margin-top: 25px;
 }
 
 /******* seccion footer-icon *******/
@@ -93,8 +82,6 @@
 }
 
 .subscribe__input {
-    width: 358px;
-    height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -128,62 +115,102 @@
 .subscribe__icon {
     fill: #ffffff;
 }
-@media screen and (max-width: 1200px) {
-    .footer--background{
-        height: auto;
-        width: 100%;
-    }
+
+
+@media screen and (min-width: 480px) {
     .footer--padding{
-        flex-wrap: wrap;
-        width: 768px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+        gap: 50px;
     }
-    .subscribe{
-        margin: 50px auto;
+    .footer--background{
+        width: 100%;
+        height: 603px;
     }
-    .footer__container{
-        text-align: center;
-        margin-left: 50px;
-    }
+
     .subscribe__container{
         display: block;
     }
-    .subscribe__input{
-        width: 450px;
-    }
-    .social{
-        margin-right:50px
-    }
-    .subscribe__btn{
-        margin: 20px auto;
-    }
-    .subscribe__title{
+    .footer__container{
         display: block;
         margin: 0 auto;
+        text-align: center;
+    }
+    .social{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .social__subtittle{
+        margin: 0;
+    }
+    .subscribe{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .subscribe__btn{
+        margin: 10px auto 0 auto;
+    }
+    
+    .subscribe__input {
+        width: 450px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .footer--padding{
+        width: 768px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 64px 22px;
+    }
+
+    .social__subtittle{
+        margin-top: 5px;
+    }
+
+    .footer--background{
+        width: 100%;
+        height: 463px;
     }
 }
-@media screen and (max-width:768px) {
-        .footer--padding {
-            width: 480px;
-            justify-content: center;
-        }
-        
-        .footer__container{
-            width: 100%;
-            margin: 0;
-        }
-        .social{
-            width: 100%;
-            margin: 0;
-        }
-        .social__subtittle{
-            display: flex;
-            justify-content: center;
-        }
-        .social__list{
-            justify-content: center;
-        }
-        .subscribe__title{
-            display: flex;
-            justify-content: center;
-        }
+
+@media screen and (min-width: 1200px) {
+    .footer--padding{
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 10px;
+    }
+    .footer--background{
+        width: 100%;
+        height: 265px;
+    }
+    .footer__container{
+        margin: 0;
+        text-align: start;
+    }
+    .subscribe__container{
+        display: flex;
+    }
+    .subscribe__btn{
+    margin: 0 0 0 10px;
+    }
+
+    .subscribe__input{
+        width: 358px;
+        height: 50px;
+    }
+    .social{
+        text-align: start;
+        margin: 0;
+    }
+    .subscribe{
+        text-align: start;
+        margin: 5px 0 0 0;
+    }
 }

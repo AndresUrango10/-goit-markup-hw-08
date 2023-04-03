@@ -1,14 +1,74 @@
 /******* HERO ********/
-.hero {
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url('../img/student.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 200px;
-    text-align: center;
+        @media screen and (min-width: 480px) {
+            .hero {
+                background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url('../../img/hero/mobil/hero.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 100px 0;
+                background-position: center;
+                text-align: center;
+    
+    
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: linear-gradient(to right,
+                            rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)),
+                        url(../../img/hero/mobil/hero@2x.jpg);
+                }
+            }
 }
+
+        @media screen and (min-width: 768px) {
+            .hero {
+                background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url('../../img/hero/tablet/hero.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 145px;
+                text-align: center;
+    
+    
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: linear-gradient(to right,
+                            rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)),
+                        url(../../img/hero/tablet/hero@2x.jpg);
+                }
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            .hero {
+                background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url('../../img/hero/desktop/hero.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 200px;
+                text-align: center;
+
+
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: linear-gradient(to right,
+                            rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)),
+                        url(../../img/hero/desktop/hero@2x.jpg);
+                }
+
+            }
+        }
 
 .hero__container {
     width: 676px;
@@ -17,12 +77,10 @@
 }
 .hero__title {
     font-weight: 900;
-    font-size: 44px;
     color: white;
 }
 
 .button-service {
-    padding: 15px 25px;
     margin-top: 20px;
     font-size: 16px;
     transition-property: background-color;
@@ -34,34 +92,42 @@
         }
 }
 
-@media screen and (max-width: 1200px){
-    .hero{
-        width: 100%;
-        height: auto;
-        background-size: cover;
-        padding: 130px;
-    }
-    .hero__title{
-        font-size: 26px;
-    }
-    .hero__container{
+@media screen and (min-width: 480px){
+    .hero__title {
+            font-size: 26px;
+        }
+    
+        .hero__container {
+            width: 360px;
+            height: auto;
+        }
+        .button-service{
+            font-size: 14px;
+            padding: 15px 15px;
+        }
+}
+
+@media screen and (min-width: 768px){
+    .hero__title {
+        font-size: 28px;
+        line-height: 1.4;
         width: 360px;
+        height: auto;    
     }
 }
-@media screen  and (max-width: 768px) {
-    .hero {
-        width: 100%;
-        height: auto;
-        background-size: cover;
-        padding: 60px;
-    }
 
-    .hero__title {
-        font-size: 26px;
+@media screen and (min-width: 1200px) {
+    .hero__title{
+        font-size: 44px;
+        width: 696px;
+        text-align: center;
     }
-
-    .hero__container {
-        width: 360px;
+    .hero__container{
+        width: 696px;
         height: auto;
+    }
+    .button-service{
+        padding: 15px 25px;
+        font-size: 14px
     }
 }
