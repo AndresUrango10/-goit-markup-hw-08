@@ -39,22 +39,44 @@
     letter-spacing: 0.03em;
 }
 
-
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
+    .customer{
+        width: 767px;
+    }
     .customer__list {
         flex-wrap: wrap;
-        width: 480px;
-        height: auto    ;
+        width: 767px;
+        height: auto;
     }
-    .customer__item{
+
+    .customer__item {
         width: 210px;
         height: auto;
     }
-    .customer__icon{
+
+    .customer__icon {
         display: block;
         margin: 0 auto;
     }
 }
+@media screen and (max-width: 480px) {
+    .customer__list {
+        flex-wrap: wrap;
+        width: 480px;
+        height: auto;
+    }
+
+    .customer {
+        width: 480px;
+    }
+    .customer__list {
+        flex-wrap: wrap;
+        width: 480px;
+        height: auto;
+    }
+}
+
+
 
 @media screen and (min-width: 768px) {
     .customer__list{
@@ -73,6 +95,7 @@
         margin: 0 auto;
     }
 }
+
 @media screen and (min-width: 1200px){
     .customer__list{
         width: 1200px;

@@ -63,7 +63,10 @@
     margin-bottom: 15px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
+    .portafolio__list{
+        justify-content: center;
+    }
     .portafolio__card {
         width: 450px;
         height: auto;
